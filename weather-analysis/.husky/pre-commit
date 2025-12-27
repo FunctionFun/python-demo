@@ -1,0 +1,14 @@
+#!/bin/sh
+# 检查是否尝试提交 .env 文件
+if git diff --cached --name-only | grep -E "\.env$|\.env\."; then
+  echo "❌ 错误：检测到敏感环境文件！"
+  echo "请从提交中移除 .env 文件"
+  exit 1
+fi
+
+# 检查文件内容是否包含明显的密钥
+if git diff --cached --no-ext-diff | grep -E "(sk-|AKIA|ghp_|xoxb-)"; then
+  echo "⚠️  警告：检测到疑似 API 密钥"
+  echo "请确认是否包含敏感信息"
+  exit 1
+fi

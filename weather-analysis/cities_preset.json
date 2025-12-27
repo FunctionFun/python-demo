@@ -1,0 +1,46 @@
+{
+  "cities": {
+    "beijing": {
+      "name": "Beijing",
+      "country": "CN",
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "display_name": "北京"
+    },
+    "shanghai": {
+      "name": "Shanghai",
+      "country": "CN",
+      "lat": 31.2304,
+      "lon": 121.4737,
+      "display_name": "上海"
+    },
+    "guangzhou": {
+      "name": "Guangzhou",
+      "country": "CN",
+      "lat": 23.1291,
+      "lon": 113.2644,
+      "display_name": "广州"
+    },
+    "shenzhen": {
+      "name": "Shenzhen",
+      "country": "CN",
+      "lat": 22.5431,
+      "lon": 114.0579,
+      "display_name": "深圳"
+    },
+    "chengdu": {
+      "name": "Chengdu",
+      "country": "CN",
+      "lat": 30.5728,
+      "lon": 104.0668,
+      "display_name": "成都"
+    },
+    "guilin": {
+      "name": "Guilin",
+      "country": "CN",
+      "lat": 25.2741,
+      "lon": 110.2993,
+      "display_name": "桂林"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  // 防止 .env 文件被显示在文件树中
+  "files.exclude": {
+    "**/.env": true,
+    "**/.env.*": true,
+    "**/.env.local": true,
+    "**/.env*.local": true,
+    "**/.env.production": true,
+    "**/.env.development": true,
+    "**/secrets": true,
+    "**/*.secret": true,
+    "**/*.secret.*": true
+  },
+  
+  // 防止在搜索中显示
+  "search.exclude": {
+    "**/.env": true,
+    "**/.env.*": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  
+  // 防止在文件打开历史中显示
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.env": true,
+    "**/.env.*": true
+  },
+  
+  // 禁用自动保存到 .env 文件
+  "files.autoSave": "off",
+  
+  // 为敏感文件设置语法高亮提醒
+  "files.associations": {
+    ".env*": "properties",
+    "*.secret": "properties"
+  }
+}
