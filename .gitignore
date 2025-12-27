@@ -1,2 +1,4 @@
 .venv/*
 .DS_Store
+ec_da/data/*
+ec_da/.ipynb_checkpoints/
