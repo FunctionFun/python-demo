@@ -9,21 +9,10 @@
     // 核心安全设置
     "files.exclude": {
       "**/.env": true,
-      "**/.env.*": true,
-      "**/.env.local": true,
       "**/secrets": true,
       "**/keys": true,
       "**/credentials": true
     },
-    
-    // Trae AI 防护
-    "trae.ai.excludeFromContext": [
-      "**/.env*",
-      "**/*secret*",
-      "**/*key*",
-      "**/config/prod*",
-      "**/docker-compose.override.yml"
-    ],
     
     // Git 防护
     "git.ignoredRepositories": [],

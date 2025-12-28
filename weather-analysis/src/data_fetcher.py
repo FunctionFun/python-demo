@@ -24,8 +24,8 @@ class UniversalWeatherFetcher:
             'User-Agent': 'WeatherAnalysisApp/1.0'
         })
         
-        # 缓存目录
-        self.cache_dir = Path('data/raw')
+        # 缓存目录 - 使用绝对路径
+        self.cache_dir = project_root / 'data/raw'
         self.cache_dir.mkdir(parents=True, exist_ok=True)
     
     def _get_cache_key(self, city: str, endpoint: str) -> str:
